@@ -1,0 +1,203 @@
+/* ------------------------------
+   RESET & BASE
+------------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+body {
+  line-height: 1.6;
+  padding-bottom: 4rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: auto;
+}
+
+/* ------------------------------
+   NAVIGATION
+------------------------------ */
+
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2rem;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+/* ------------------------------
+   TITRES & TEXTES
+------------------------------ */
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.muted {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* ------------------------------
+   LAYOUT
+------------------------------ */
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ------------------------------
+   CARDS
+------------------------------ */
+
+.card {
+  background: #ffffff;
+  padding: 1.7rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  margin-bottom: 2.5rem;
+}
+
+/* ------------------------------
+   FIGURES
+------------------------------ */
+
+figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  text-align: center;
+  background: #ffffff;
+  border-top: 1px solid #ddd;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* ------------------------------
+   AUDIO PLAYER
+------------------------------ */
+
+audio {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+/* ------------------------------
+   IMAGES SPÉCIFIQUES
+------------------------------ */
+
+/* PHOTO DE MILO SUR LA PAGE D’ACCUEIL */
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* Remplit l’espace sans laisser de blanc */
+  border-radius: 18px;      /* Arrondi plus prononcé */
+  display: block;
+}
+
+/* Conteneur de la photo : pas de blanc autour */
+.grid aside.card {
+  padding: 0;               /* Supprime les marges internes */
+  overflow: hidden;         /* Empêche tout débordement */
+  border-radius: 18px;      /* Arrondi cohérent avec la photo */
+}
+
+/* Moodboard plus large */
+img[src*="moodboard"] {
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+/* Images de projets */
+img[src*="chemin-paix"],
+img[src*="logis-floreal"],
+img[src*="carsat-logo"],
+img[src*="seniors-ve"],
+img[src*="commission-bv"],
+img[src*="vivre-ensemble-logo"],
+img[src*="enfants"],
+img[src*="central-lalouviere"] {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
